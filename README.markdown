@@ -1,5 +1,6 @@
-# ✅📋 React To-Do Master: Task Management App 🇵🇱
-_A responsive web application for managing tasks (add, edit, complete, delete) built with React Hooks and leveraging localStorage for persistence, featuring a Polish user interface._
+# ✅📋 React To-Do Master: Task Management App 🌍
+
+_A responsive web application for managing tasks (add, edit, complete, delete) built with React Hooks and leveraging localStorage for persistence, featuring an English user interface._
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React](https://img.shields.io/badge/React-Hooks-61DAFB.svg?logo=react)](https://reactjs.org/)
@@ -11,11 +12,11 @@ _A responsive web application for managing tasks (add, edit, complete, delete) b
 ## 📋 Table of Contents
 1.  [Overview](#-overview)
 2.  [Key Features](#-key-features)
-3.  [Screenshots (Conceptual)](#-screenshots-conceptual)
+3.  [Screenshots](#-screenshots)
 4.  [Technical Stack & Requirements](#-technical-stack--requirements)
 5.  [Local Development Setup](#️-local-development-setup)
 6.  [Application Usage](#️-application-usage)
-7.  [File Structure (Typical Create React App)](#-file-structure-typical-create-react-app)
+7.  [File Structure](#-file-structure)
 8.  [Important Notes & Considerations](#-important-notes--considerations)
 9.  [Contributing](#-contributing)
 10. [License](#-license)
@@ -23,7 +24,7 @@ _A responsive web application for managing tasks (add, edit, complete, delete) b
 
 ## 📄 Overview
 
-**React To-Do Master** is a client-side web application developed by Adrian Lesniak for managing daily tasks. Built with **React** and utilizing core **React Hooks** (`useState` for state management, `useEffect` for side effects like localStorage synchronization), it allows users to seamlessly add new tasks, edit existing ones, mark tasks as completed (visually indicated by a strikethrough), and delete tasks. A key feature is its use of the browser's **localStorage** to persist tasks, ensuring that the to-do list remains available across browser sessions. The application features a simple, clean user interface styled with custom CSS (`App.css`) and presents its UI elements in Polish.
+**React To-Do Master** is a client-side web application developed by Adrian Lesniak for managing daily tasks. Built with **React** and utilizing core **React Hooks** (`useState` for state management, `useEffect` for side effects like localStorage synchronization), it allows users to seamlessly add new tasks, edit existing ones, mark tasks as completed (visually indicated by a strikethrough), and delete tasks. A key feature is its use of the browser's **localStorage** to persist tasks, ensuring that the to-do list remains available across browser sessions. The application features a simple, clean user interface styled with custom CSS (`App.css`) and presents its UI elements in English.
 
 <br><br>
 <p align="center">
@@ -46,28 +47,28 @@ _A responsive web application for managing tasks (add, edit, complete, delete) b
 *   🎨 **Simple & Interactive User Interface**:
     *   A dedicated input field for adding new tasks.
     *   Each task in the list is displayed with action buttons:
-        *   "Oznacz jako wykonane" (Mark as done)
-        *   "Edytuj" (Edit)
-        *   "Usuń" (Delete)
+        *   "Mark as done"
+        *   "Edit"
+        *   "Delete"
 *   💅 **Custom Styling**:
     *   Styled with custom CSS rules defined in `src/App.css` to provide a clean layout and visual appeal.
-*   🇵🇱 **Polish Language Interface**: All user-facing buttons and prompts are in Polish (e.g., "Dodaj", "Edytuj", "Usuń").
+*   🌐 **English Language Interface**: All user-facing buttons and prompts are in English (e.g., "Add", "Edit", "Delete").
 
-## 🖼️ Screenshots (Conceptual)
+## 🖼️ Screenshots
 
 _Screenshots of: the main application interface with the input field and task list, a task being edited, a task marked as completed (strikethrough), and how the list looks after a page reload (demonstrating localStorage persistence)._
 
 <p align="center">
-  <img src="screenshots\1.jpg" width="300"/>
-  <img src="screenshots\2.jpg" width="300"/>
-  <img src="screenshots\3.jpg" width="300"/>
-  <img src="screenshots\4.jpg" width="300"/>
-  <img src="screenshots\5.jpg" width="300"/>
-  <img src="screenshots\6.jpg" width="300"/>
-  <img src="screenshots\7.jpg" width="300"/>
-  <img src="screenshots\8.jpg" width="300"/>
-  <img src="screenshots\9.jpg" width="300"/>
-  <img src="screenshots\10jpg" width="300"/>
+  <img src="screenshots/1.jpg" width="300"/>
+  <img src="screenshots/2.jpg" width="300"/>
+  <img src="screenshots/3.jpg" width="300"/>
+  <img src="screenshots/4.jpg" width="300"/>
+  <img src="screenshots/5.jpg" width="300"/>
+  <img src="screenshots/6.jpg" width="300"/>
+  <img src="screenshots/7.jpg" width="300"/>
+  <img src="screenshots/8.jpg" width="300"/>
+  <img src="screenshots/9.jpg" width="300"/>
+  <img src="screenshots/10.jpg" width="300"/>
 </p>
 
 ## 🛠️ Technical Stack & Requirements
@@ -126,28 +127,28 @@ _Screenshots of: the main application interface with the input field and task li
 
 1.  Open the **React To-Do Master** application in your web browser (e.g., `http://localhost:3000`).
 2.  **Interface**:
-    *   **Input Field**: At the top (or a designated area), you'll find a text input field and an "Dodaj" (Add) button.
+    *   **Input Field**: At the top, you'll find a text input field and an "Add" button.
     *   **Task List**: Below the input field, any existing tasks will be displayed. If it's your first time or localStorage is empty, this list will be empty.
 3.  **Actions**:
     *   **Adding a Task**:
         *   Type your task description into the input field.
-        *   Click the "Dodaj" button.
+        *   Click the "Add" button.
         *   The new task will appear in the list below. Empty inputs are ignored.
     *   **Marking a Task as Done**:
-        *   Click the "Oznacz jako wykonane" button next to a task.
-        *   The task text will be struck through to indicate completion. Clicking again might toggle this status.
+        *   Click the "Mark as done" button next to a task.
+        *   The task text will be struck through to indicate completion. Clicking again toggles this status.
     *   **Editing a Task**:
-        *   Click the "Edytuj" button next to a task.
+        *   Click the "Edit" button next to a task.
         *   A `prompt()` dialog will appear, pre-filled with the current task text.
         *   Modify the text and click "OK." The task in the list will update.
     *   **Deleting a Task**:
-        *   Click the "Usuń" button next to a task.
+        *   Click the "Delete" button next to a task.
         *   The task will be removed from the list.
 4.  **Persistence**:
     *   All changes (additions, edits, completions, deletions) are automatically saved to your browser's localStorage.
     *   If you reload the page or close and reopen the browser, your tasks will be retrieved from localStorage and displayed.
 
-## 🗂️ File Structure (Typical Create React App)
+## 🗂️ File Structure
 
 The project is expected to follow a structure similar to that created by `create-react-app`:
 
@@ -164,7 +165,7 @@ The project is expected to follow a structure similar to that created by `create
 
 ## 📝 Important Notes & Considerations
 
-*   **Polish UI**: The application's user interface (button labels, prompts) is in Polish. It can be easily translated by modifying the string literals in `App.js`.
+*   **English UI**: The application's user interface (button labels, prompts) is in English. You can easily translate it by modifying the string literals in `App.js`.
 *   **Task Completion State**: Marking tasks as done uses HTML `<s>` tags for a visual strikethrough. A more robust approach would be to add a boolean `isCompleted` flag to each task object in the state, and then conditionally apply a CSS class for styling completed tasks. This provides better state management and flexibility.
 *   **Edit Feature UX**: The edit functionality uses the browser's native `prompt()`. While simple, this offers a limited user experience. For a more polished application, consider replacing this with an inline editing input field or a custom modal dialog component.
 *   **Client-Side Only**: This is a purely client-side application. All data is stored in the user's browser via `localStorage`. There is no backend server or database involved.
